@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Problems Section Container */
+.problems-container {
+  padding: 2rem;
+  /* background-color: #1c1c1c; */
+  background-color: #181818;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  margin: 2rem auto;
+  color: white;
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Table Container */
+.table-container {
+  max-height: 500px; /* Set scrollable height */
+  overflow-y: auto; /* Vertical scrolling */
+  border-radius: 8px;
+  background-color: #2d2d2d; /* Dark background for table */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
+
+th {
+  background-color: #34495e;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Link Styling */
+a {
+  color: #8c76f8; /* Soft purple */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f39c12; /* Bright golden/orange on hover */
+}
+
+
+/* Button Styling */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Solved Button */
+button.solved {
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #4caf50;
+  box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
+}
+
+button.solved:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Unsolved Button */
+button.unsolved {
+  background-color: #e74c3c;
+  color: white;
+  border: 2px solid #e74c3c;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+}
+
+button.unsolved:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
+
+/* Disabled Button */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .problems-container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}

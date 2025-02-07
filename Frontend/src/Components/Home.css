@@ -1,0 +1,150 @@
+/* Apply background color to the entire page */
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #181818 !important;  /* Set the background color */
+    color: white; /* Set text color to white for contrast */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .hero h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    background: #262626; /* Dark Gray Card */
+    padding: 12px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    color: #4CAF50;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-btn:hover {
+    transform: translateY(-5px);
+    transition: 0.3s; 
+  }
+  
+  /* Roadmap Section */
+.roadmap {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #181818;
+  }
+  
+  .roadmap h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .roadmap-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .roadmap-item {
+    background-color: #262626; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .roadmap-item h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .roadmap-item p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  
+  /* Footer Section */
+  /* Footer Container */
+.footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Container Layout */
+  .footer {
+    background-color: #181818;  /* Dark background */
+    color: #4CAF50; /* White text color */
+    padding: 20px;
+    text-align: center;  /* Center text */
+    font-family: Arial, sans-serif;  /* Clean font */
+    position: relative;
+  }
+  
+  .footer .social-icon {
+    width: 40px;  /* Set icon size */
+    height: 40px;
+    margin: 0 15px;  /* Space out icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;  /* Smooth transition */
+  }
+  
+  .footer .social-icon:hover {
+    transform: scale(1.1);  /* Slightly increase size on hover */
+    opacity: 0.8;  /* Slight opacity change on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;  /* Space between icons and text */
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #4CAF50;  /* Lighter color for text */
+  }
+  
+  /* Add gap between social links and copyright */
+  .footer .social-links {
+    margin-bottom: 30px;  /* Adjust this value to control gap between links and copyright */
+  }
+  
+  .footer a {
+    text-decoration: none;  /* Remove underline from links */
+  }
+  
+  .footer a:hover {
+    opacity: 0.7;  /* Slight opacity change on hover */
+  }
+  
+  .footer .footer-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

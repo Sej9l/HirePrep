@@ -1,0 +1,139 @@
+/* Main container */
+.core-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818; /* Dark background */
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Heading Styling */
+.core-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grid layout: Two cards per row */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px;
+  width: 90vw; /* Covers most of the width */
+  max-width: 1200px;
+}
+
+/* Card styling */
+.card {
+  background: #262626; /* Dark Gray Card */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  min-height: 300px;
+  color: white;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Title */
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-bottom: 15px;
+}
+
+/* Image Row */
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Image Container */
+.image-container {
+  background: #1f1f1f; /* Dark Gray Background for Images */
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+
+/* Image */
+.icon {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+.buttons {
+  display: flex;  /* Aligns items in a row */
+  gap: 10px; /* Adds space between the images */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+.btn img {
+  width: 200px; /* Adjust the size of images */
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.btn img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Button */
+.btn {
+  text-decoration: none;
+  background: #3a3a3a; /* Neutral Gray Background */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #505050;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .image-row {
+    flex-direction: column; /* Stack images vertically on small screens */
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .icon {
+    width: 160px;
+    height: 160px;
+  }
+}
